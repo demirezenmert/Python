@@ -1,31 +1,30 @@
 
-# #
-# #
-# # n logn max arama sayisini 
+#
+#
+# n logn max arama sayisini 
 
 
 
-# def binarySearch (arr, elem):
+def binarySearch (arr, elem):
+    print(arr)
+    if len(arr) == 1 :
+        
+        return arr[0] == elem
+    if arr[len(arr) // 2] == elem :
+        
+        return True
+    if arr[len(arr) // 2] > elem :
+        
+        return binarySearch(arr[:len(arr)//2],elem) 
+    elif arr [len(arr) // 2] < elem :
+        
+        return binarySearch(arr[len(arr)//2:],elem) 
+        
+        
     
-#     if len(arr) == 1 :
-#         return arr[0] == elem
-#     if len(arr) // 2 == elem :
-#         return True
-#     if len(arr) // 2 > elem :
-#         return binarySearch(arr[:len(arr)//2],elem) 
-#     else :
-#         return binarySearch(arr[len(arr)//2:],elem) 
-def ff (ar) :
-    if len(ar) == 0 :
-        print("by")
-    else :
-        print("debug")
-    
-testArray = [1,4]
-ff(testArray)
-print(testArray.sort())
-# testArray = testArray.sort()
+testArray = [1,4,5,4,3,5,634,45,5,3,1]
 
-# print(binarySearch(testArray,6))
+testArray.sort()
 
+print(binarySearch(testArray,45))
 
