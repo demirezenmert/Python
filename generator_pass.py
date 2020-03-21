@@ -2,7 +2,10 @@ import random as rd
 
 def generatorPass (name) :
     password = ""
+
     name = name.lower()
+    name  += name.upper()
+    name += "012345"
     lenght = rd.randint(6,10)
     for  i in range(lenght) :
         password += rd.choice(name)
