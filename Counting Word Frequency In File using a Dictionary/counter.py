@@ -23,15 +23,18 @@ for i in hand :
         # Dictionary Method -------
 
 
-        
+
         # ----
-        # di.get(w,0) if w not exist count= 0
+        # di.get(w,0) if w not exist return  0
+        # so oldCount = 0
         # ----
 
-        oldCount = di.get(w,0)
-        print(w,'Old',oldCount)
-        newCount = oldCount + 1
-        di[w] = newCount
-        print(w,"New",newCount)
-
+        # oldCount = di.get(w,0)
+        # print(w,'Old',oldCount)
+        # newCount = oldCount + 1
+        # di[w] = newCount
+        # print(w,"New",newCount)
+        #               Make all of them only line
+        di[w] = di.get(w,0) + 1
+        print(w,'New',di[w])
 print(di)
