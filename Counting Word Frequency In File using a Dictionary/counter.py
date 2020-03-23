@@ -36,5 +36,5 @@ for i in hand :
         # print(w,"New",newCount)
         #               Make all of them only line
         di[w] = di.get(w,0) + 1
-        print(w,'New',di[w])
+        # print(w,'New',di[w])
 print(di)
