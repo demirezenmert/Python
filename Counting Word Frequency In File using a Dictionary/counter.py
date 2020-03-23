@@ -37,4 +37,14 @@ for i in hand :
         #               Make all of them only line
         di[w] = di.get(w,0) + 1
         # print(w,'New',di[w])
-print(di)
+# print(di)
+#  Which Word Largest has frequency
+largest = -1
+key = None
+for  k,v in di.items():
+    print(k,v)
+    if v > largest :
+        largest = v
+        key = k
+print('----------')    
+print("Done",largest,"Key--:",key)
