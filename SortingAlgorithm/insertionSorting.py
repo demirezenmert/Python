@@ -8,8 +8,8 @@ def insertionSort (collection):
     
     length = len(collection)
 
-    for i in range(1,length):
-        insertion_index = i 
+    for loop_index in range(1,length):
+        insertion_index = loop_index
         while ( insertion_index > 0 
         and collection[insertion_index-1]> collection[insertion_index]
         ):
