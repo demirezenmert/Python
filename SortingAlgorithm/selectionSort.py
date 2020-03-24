@@ -1,16 +1,23 @@
 
 
+def selectionSorting(collection) :
+    length = len(collection)
 
-def sorting (ar) :
-    lenght = len(ar)
-    
-    
-    for i in range(lenght-1) :
-        if ar[i] > ar[i+1] : 
-            ar[i], ar[i+1] = ar[i+1],a[i]
+    for i in range(length-1) :
+        least = i
+        for j in range(i+1,length):
+            if collection[j] < collection[least]  :  least = j
+        if least != i :
+            collection[least] , collection[i] = collection[i],collection[least]
 
-    return ar
+    return collection
 
 
-a = [2,1,6,5,3,6,876,46,3453,2,1,0]
-print(sorting(a))
+
+
+
+
+if __name__ == "__main__":
+    user_array = input("Please Enter Number seperated by comma (,):").strip()
+    unsorted = [int(item) for item in user_array.split(",")]
+    print(selectionSorting(unsorted))
