@@ -1,21 +1,19 @@
 #  Password Generator
 
+This Application can be used by normal users to generate strong password
 
 
 ## Install
 
+**Terminal **
+
 ```
-Clone the files 
+Clone the files
+git clone https://github.com/demirezenmert/Python.git
+python3 Python/Password\ Generator/
+
+Enter key for generate Password and lenght Min - Max seperated by comma (,)
 ```
 
-## Insertion sort
 
 
-**Insertion sort** is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
-
-Properties:
-
-Worst-case performance O(n^2)   
-Best-case performance O(n)   
-Average case performance O(n^2)    
-read more at: Wikipedia
