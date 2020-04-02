@@ -23,7 +23,7 @@ def generatorPass (key) :
         password += rd.choice(key)
     return password
 
-# key = input ("Please Enter Key  :  ") 
+
 
 
 if __name__ == "__main__":
