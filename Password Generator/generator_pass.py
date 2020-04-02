@@ -1,3 +1,8 @@
+# Created by Mert Demirezen 
+# Copyright © 2019 Mert Demirezen. All rights reserved.
+
+
+
 import random as rd
 
 

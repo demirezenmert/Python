@@ -1,6 +1,10 @@
 #insertionSort 
 
+
 '''
+     Created by Mert Demirezen 
+     Copyright © 2019 Mert Demirezen. All rights reserved.
+
     Insertion Sorting Algortihm
 
 '''
