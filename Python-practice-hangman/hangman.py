@@ -1,3 +1,4 @@
+from distutils.log import error
 from itertools import count
 import time
 from time import sleep
@@ -17,6 +18,18 @@ def welcome():
     print("The game is about to start!\nLet's play Hangman!")
     sleep(3)
 
+def wordPicker():
+    try:
+        with open ('word.txt','r') as file:
+            words = file.readlines()
+        if len(words) == 0:
+            words = ["january","border","image","film","promise","kids","lungs","doll","rhyme","damage","plants"]            
+    except:
+        words = ["january","border","image","film","promise","kids","lungs","doll","rhyme","damage","plants"]
+    word = random.choice(words)
+    word = word.rstrip()
+    return word
+        
 def main():
     global display  
     global word_pick
@@ -29,8 +42,7 @@ def main():
     already_guessed = []
     limit = 5
     count = 0
-    words_to_guess = ["january","border","image","film","promise","kids","lungs","doll","rhyme","damage","plants"]
-    word = random.choice(words_to_guess)
+    word = wordPicker()
     word_pick = word
     length = len(word)
     display = '_' * length
