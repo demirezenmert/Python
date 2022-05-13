@@ -3,20 +3,31 @@ from itertools import count
 import time
 from time import sleep
 import random
+import os
+from sys import platform as pt
 
 
-
-
+#terminal screen clear
+def clear():
+    if pt == 'linux' or pt == 'linux2' or pt == 'darwin':
+        os.system('clear')
+    else: 
+        os.system('cls')
     
 
 
 def welcome():
+    clear()
+    sleep(1)
     print('Welcome to Hangman Game by Mert Demirezen')
     player_name = input('Enter your name: ')
     print(f'Hello {player_name}! Best of luck')
     sleep(2)
     print("The game is about to start!\nLet's play Hangman!")
     sleep(3)
+
+
+
 
 def wordPicker():
     try:
